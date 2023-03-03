@@ -62,8 +62,6 @@ while ($isWhile == 'Y') {
         $json = json_encode($xml);
         $arrayForCourse = json_decode($json, true);
 
-        writeToLog($arrayForCourse);
-
         $courseName = $arrayForCourse['contentItem']['title']; // название курса
         $courseURL = $arrayForCourse['contentItem']['viewUrl']; // урл курса
 
